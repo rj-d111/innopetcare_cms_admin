@@ -7,7 +7,7 @@
     <!-- Navbar -->
     <nav class="fixed w-full bg-amber-900 text-white">
         <div class="container mx-auto flex justify-between items-center p-4">
-            <img src="{{ url('storage/images/innopetcare-white.png') }}" alt="InnoPetCare" class="h-8">
+            <img src="{{ asset('storage/images/innopetcare-white.png') }}" alt="InnoPetCare" class="h-8">
             <div class="flex space-x-4 items-center">
                 <div x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false" class="relative">
                     <button class="focus:outline-none">Resources</button>
@@ -17,7 +17,7 @@
                         <a href="#" class="block px-4 py-2">Help Center</a>
                     </div>
                 </div>
-                <a href="{{ url('login')}}" class="focus:outline-none">Login</a>
+                <a href="{{ route('login')}}" class="focus:outline-none">Login</a>
                 <a href="#" class="bg-white text-amber-900 px-4 py-2 rounded focus:outline-none">Start Creating</a>
             </div>
         </div>
@@ -26,7 +26,7 @@
 
 @section('content')
   <!-- Hero Section -->
-  <section class="bg-cover bg-center pt-40" style="background-image: url('{{ url('storage/images/background-pet.jpg') }}');">
+  <section class="bg-cover bg-center pt-40" style="background-image: url('{{ asset('storage/images/background-pet.jpg') }}');">
     <div class="container mx-auto text-center py-16">
         <h1 class="text-4xl md:text-6xl font-bold text-white">Your furry friends deserve the best.</h1>
         <p class="text-xl md:text-2xl text-white mt-4">Create a website that reflects your passion for animal care with our easy-to-use CMS. No coding required!</p>
