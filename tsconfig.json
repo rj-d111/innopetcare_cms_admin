@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true
+    },
+    "include": [
+        "resources/js/**/*", // Ensure this path points to your JavaScript/TypeScript files
+        "resources/js/jscolor.d.ts" // Include the jscolor.d.ts file
+    ]
+}
